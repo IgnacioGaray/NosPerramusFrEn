@@ -20,3 +20,4 @@ pip-log.txt
 venv
 *.pyc
 build
+*.env
