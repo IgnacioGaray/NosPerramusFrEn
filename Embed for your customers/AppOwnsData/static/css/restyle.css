@@ -1,0 +1,48 @@
+.bg-dark {
+    background-color: #737373!important;
+}
+
+.navbar-brand {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #f36e1f;
+    border-color: #f36e1f;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #ff9120;
+    border-color: #ff9120;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #f36e1f;
+    border-color: #f36e1f;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #f36e1f;
+    border-color: #f36e1f;
+    box-shadow: 0 0 0 0.2rem rgb(243 110 31 / 50%);
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f36e1f;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(243 110 31 / 50%);
+}
+
+header {
+    background-color: #737373;
+    height: 75px;
+    width: 100%;
+}
