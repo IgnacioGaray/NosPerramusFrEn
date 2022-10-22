@@ -3,9 +3,10 @@
 
 from services.pbiembedservice import PbiEmbedService
 from utils import Utils
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory,redirect, url_for, request
 import json
 import os
+
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -18,6 +19,17 @@ def index():
     '''Returns a static HTML page'''
 
     return render_template('index.html')
+
+@app.route('/adminlogin',methods=['GET','POST'])
+def login():
+    error=None
+    if request.method=='POST':
+        print(request.form['username'])
+        if request.form['username'] != app.config['ADMIN_USER'] or request.form['password'] != app.config['ADMIN_PASS']:
+            error = 'Invalid Credentials. Please try again.'
+        else:
+            return redirect(url_for('index'))  
+    return render_template('login.html',error=error)
 
 @app.route('/getembedinfo', methods=['GET'])
 def get_embed_info():

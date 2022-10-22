@@ -33,6 +33,12 @@ class BaseConfig(object):
     
     # Master user email address. Required only for MasterUser authentication mode.
     POWER_BI_USER = os.environ["POWER_BI_USER"]
+
+    #Admin User for Login 
+    ADMIN_USER=os.environ["ADMIN_USER"]
+
+    #Admin Pass for Login
+    ADMIN_PASS=os.environ["ADMIN_PASS"]
     
     # Master user email password. Required only for MasterUser authentication mode.
     POWER_BI_PASS = ''
