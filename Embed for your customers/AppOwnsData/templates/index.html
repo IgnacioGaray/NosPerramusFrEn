@@ -26,11 +26,13 @@ Licensed under the MIT license.
             <img src="{{ url_for('static', filename='img/NosPerramusLogo.svg') }}" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
             NosPerramus
         </a>
+        <form action="/adminlogin" method="get">
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Admin login</button>
+        </form>
     </nav>
-    <main>
-        <section id="report-container" class="embed-container col-sm-12 p-0">
+    <main style='padding-top: 20px;'>
+        <section id="report-container"  class="embed-container col-sm-12 p-0">
         </section>
-
         <!-- Used to display report embed error messages -->
         <section class="error-container m-5">
         </section>
