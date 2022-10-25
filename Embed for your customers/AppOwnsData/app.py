@@ -20,15 +20,19 @@ def index():
 
     return render_template('index.html')
 
+@app.route('/newcampaign')
+def newcampaign():
+    return render_template('newcampaign.html')
+
 @app.route('/adminlogin',methods=['GET','POST'])
 def login():
     error=None
     if request.method=='POST':
         print(request.form['username'])
         if request.form['username'] != app.config['ADMIN_USER'] or request.form['password'] != app.config['ADMIN_PASS']:
-            error = 'Invalid Credentials. Please try again.'
+            error = 'Usuario o contraseña invalido, Intente nuevamente.'
         else:
-            return redirect(url_for('index'))  
+            return redirect(url_for('newcampaign'))  
     return render_template('login.html',error=error)
 
 @app.route('/getembedinfo', methods=['GET'])
