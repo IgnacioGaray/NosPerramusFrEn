@@ -16,6 +16,7 @@ Licensed under the MIT license.
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/newcampaign.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/restyle.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>NosPerramus</title>
 </head>
 
@@ -64,115 +65,120 @@ Licensed under the MIT license.
                                 <div class="card-body row">
                                     <div class="col-md-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="select-all-colors" id="select-all-colors"  type="checkbox"  value="" >
+                                            <label class="form-check-label" for="color-checkbox">Seleccionar todos los colores</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Aero melange</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color"  type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Azul Francia</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Beige</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input"  name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Camel fuerte</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input"  name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Cemento</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Cereza</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Estampa</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Fantasia gris</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input"  name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Fantasia micro</label>
                                         </div>
+
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Gris</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Gris claro</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Gris melange</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Ladrillo</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Latte</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Marino</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Naranja</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Negro</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Negro jet</label>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Off white</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Rojo</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Rosa</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Tiza</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Topo</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Verde</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Verde seco</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Vision</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="color-checkbox">
+                                            <input class="form-check-input" name="color" type="checkbox" value="" id="color-checkbox">
                                             <label class="form-check-label" for="color-checkbox">Vision oscuro</label>
                                         </div>
                                     </div>
@@ -186,27 +192,31 @@ Licensed under the MIT license.
                             <div class="card collapse show" id="collapseArticulo">
                                 <div class="card-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="lumley-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="select-all-articles">
+                                        <label class="form-check-label" for="lumley-checkbox">Selecionar todos los articulos</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="lumley-checkbox">
                                         <label class="form-check-label" for="lumley-checkbox">Lumley</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="vader17-checkbox">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="vader17-checkbox">
                                         <label class="form-check-label" for="vader17-checkbox">Vader 17</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="gappy-checkbox">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="gappy-checkbox">
                                         <label class="form-check-label" for="gappy-checkbox">Gappy</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="macbeth-checkbox">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="macbeth-checkbox">
                                         <label class="form-check-label" for="macbeth-checkbox">Macbeth</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="fily-checkbox">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="fily-checkbox">
                                         <label class="form-check-label" for="fily-checkbox">Fily</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="feet-checkbox">
+                                        <input class="form-check-input" name="articulo" type="checkbox" value="" id="feet-checkbox">
                                         <label class="form-check-label" for="feet-checkbox">Feet</label>
                                     </div>
                                 </div>
@@ -217,35 +227,39 @@ Licensed under the MIT license.
                             <div class="card collapse show" id="collapseTalle">
                                 <div class="card-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-XXS-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="select-all-sizes">
+                                        <label class="form-check-label" for="size-XXS-checkbox">Seleccionar todos los talles</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-XXS-checkbox">
                                         <label class="form-check-label" for="size-XXS-checkbox">XXS</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-XS-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-XS-checkbox">
                                         <label class="form-check-label" for="size-XS-checkbox">XS</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-S-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-S-checkbox">
                                         <label class="form-check-label" for="size-S-checkbox">S</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-M-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-M-checkbox">
                                         <label class="form-check-label" for="size-M-checkbox">M</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-L-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-L-checkbox">
                                         <label class="form-check-label" for="size-L-checkbox">L</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-XL-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-XL-checkbox">
                                         <label class="form-check-label" for="size-XL-checkbox">XL</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-XXL-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-XXL-checkbox">
                                         <label class="form-check-label" for="size-XXL-checkbox">XXL</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="size-XXXL-checkbox">
+                                        <input class="form-check-input" name=talle type="checkbox" value="" id="size-XXXL-checkbox">
                                         <label class="form-check-label" for="size-XXXL-checkbox">XXXL</label>
                                     </div>
                                 </div>
@@ -256,23 +270,28 @@ Licensed under the MIT license.
                             <div class="card collapse show" id="collapseSucursal">
                                 <div class="card-body">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sucursal-dot-checkbox">
+                                        <input class="form-check-input" type="checkbox" value="" id="select-all-shops">
+                                        <label class="form-check-label" for="select-all-shops">Seleccionar todas las sucursales</label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" name="sucursal" type="checkbox" value="" id="sucursal-dot-checkbox">
                                         <label class="form-check-label" for="sucursal-dot-checkbox">Dot</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sucursal-alvear-checkbox">
-                                        <label class="form-check-label" for="sucursal-alvear-checkbox">Alvear</label>
+                                        <input class="form-check-input" name="sucursal"  type="checkbox" value="" id="sucursal-alvear-checkbox">
+                                        <label class="form-check-label"    for="sucursal-alvear-checkbox">Alvear</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sucursal-carilo-checkbox">
+                                        <input class="form-check-input" name="sucursal"  type="checkbox" value="" id="sucursal-carilo-checkbox">
                                         <label class="form-check-label" for="sucursal-carilo-checkbox">Carilo</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sucursal-florida-checkbox">
+                                        <input class="form-check-input" name="sucursal"  type="checkbox" value="" id="sucursal-florida-checkbox">
                                         <label class="form-check-label" for="sucursal-alvear-checkbox">Florida</label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="sucursal-sarmiento-checkbox">
+                                        <input class="form-check-input" name="sucursal"  type="checkbox" value="" id="sucursal-sarmiento-checkbox">
                                         <label class="form-check-label" for="sucursal-sarmiento-checkbox">Sarmiento</label>
                                     </div>
                                 </div>
@@ -375,8 +394,41 @@ Licensed under the MIT license.
             }, 3000);
             
         });
+        $('#select-all-colors').click(function(event) {   
+        if(this.checked) {
+        
+            $('input[name=color]').prop('checked', true);
+        } else {
+            $('input[name=color]').prop('checked', false);
+        }});
+        
+
+        $('#select-all-articles').click(function(event) {   
+        if(this.checked) {
+        
+            $('input[name=articulo]').prop('checked', true);
+        } else {
+            $('input[name=articulo]').prop('checked', false);
+        }});
+
+        $('#select-all-sizes').click(function(event) {   
+        if(this.checked) {
+        
+            $('input[name=talle]').prop('checked', true);
+        } else {
+            $('input[name=talle]').prop('checked', false);
+        }});  
+
+        $('#select-all-shops').click(function(event) {   
+        if(this.checked) {
+        
+            $('input[name=sucursal]').prop('checked', true);
+        } else {
+            $('input[name=sucursal]').prop('checked', false);
+        }});  
 
     </script>
+
 
 </body>
 </html>
